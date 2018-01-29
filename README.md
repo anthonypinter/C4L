@@ -37,7 +37,7 @@ scrapy crawl nextpagehtmlbooks
 
 This is the basic architecture for scraping an entire site's html, and saving it. Why might this be useful?
 
-##Scraping specific pieces of data from the entire website
+## Scraping specific pieces of data from the entire website
 
 Now that we have a grasp on how to scrape and save the entire source code, let's turn our attention to scraping specific pieces of data.
 
@@ -45,4 +45,6 @@ Now that we have a grasp on how to scrape and save the entire source code, let's
 scrapy crawl pagedatabooks -o out.json
 ```
 
-This will generate a json output file containing all of the titles of the books on page 1.
+This will generate a json output file containing all of the titles of the books on page 1. Let's do an exercise - update this file so that you also pull the price of each book. To help you with this, you can use the developer's terminal to view the source code and see what the CSS selector is for the price, or you can use [Selector Gadget](http://selectorgadget.com).
+
+If you're having trouble, the answer can be found in the `answer_pagedatabooks.py` file in the `tutorial/tutorial/spiders` directory.
