@@ -14,5 +14,5 @@ class Spider(scrapy.Spider):
         with open(filename, 'wb') as f: # opens a file with the name we set in line 13
             f.write(response.body) # writes the HTML for the webpage we opened
 
-    next_page = response.css('li.next a::attr(href)').extract_first() #looks for the next page element on the page        if next_page is not None:
-            yield response.follow(next_page, callback=self.parse)
+        next_page = response.css('li.next a::attr(href)').extract_first() #looks for the next page element on the page        if next_page is not None:
+        yield response.follow(next_page, callback=self.parse)
