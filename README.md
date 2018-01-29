@@ -11,7 +11,7 @@ cd tutorial
 
 This will put you into the Scrapy tutorial file.
 
-##Scraping the entire page and saving its HTML
+## Scraping the entire page and saving its HTML
 
 The first task we're going to accomplish is to scrape a single page's HTML source code from http://books.toscrape.com and save it.
 
@@ -27,7 +27,7 @@ Compare your html file to this page: http://books.toscrape.com/catalogue/page-1.
 
 Notice that all the relevant data is there: title, price, etc.
 
-##Scraping the entire site using next page logic
+## Scraping the entire site using next page logic
 
 Next, let's scrape all 50 pages on the website and save their source code (note, this will result in 50 files in your tutorial directory):
 
