@@ -48,3 +48,23 @@ scrapy crawl pagedatabooks -o out.json
 This will generate a json output file containing all of the titles of the books on page 1. Let's do an exercise - update this file so that you also pull the price of each book. To help you with this, you can use the developer's terminal to view the source code and see what the CSS selector is for the price, or you can use [Selector Gadget](http://selectorgadget.com).
 
 If you're having trouble, the answer can be found in the `answer_pagedatabooks.py` file in the `tutorial/tutorial/spiders` directory.
+
+## Scraping specific pieces of data from the entire website
+
+Time for the next exercise! At this point, you've seen how to select certain elements to scrape, and you've seen how to scrape multiple pages using the next page logic built into Scrapy.
+
+Now, combine the two!
+
+Create a script that scrapes the titles, prices, and any other data you want off of every page on http://books.toscrape.com. (Hint: copy+paste from other files is always a good way to go!)
+
+If you'd like to check your script against mine, open the `nextpagedatabooks.py` file found in `tutorial/tutorial/spiders`.
+
+## Where does BS4 go (optional)
+
+...
+
+## Free Time
+
+The original Scrapy tutorial uses http://quotes.toscrape.com. This is useful for us, because you can test your skills on that site, and have the answers available [here](https://docs.scrapy.org/en/latest/intro/tutorial.html).
+
+Alternatively, you can try to scrape a different site. The basic code will remain the same, what will change is the URLs and CSS selectors.
