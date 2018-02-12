@@ -1,17 +1,19 @@
 # c4lscrapingworkshop
 
-Link to the slide deck: https://docs.google.com/presentation/d/1zqUPexE_GaRRFGVW4GWyBQy6O6pzqf-smV4M3pyDXlc/edit?usp=sharing
+Link to the slide deck: https://docs.google.com/presentation/d/1Rp7mq3_XLlucbBlu0WWH8ooTffhV2MMK53YYEd6l2-k/edit?usp=sharing
+
+## scrapy
 
 Once you clone this project to your preferred destination, cd into that destination and run:
 ```
 cd c4lscrapingworkshop
 cd codetemplates
-cd tutorial
+cd scrapy
 ```
 
 This will put you into the Scrapy tutorial file.
 
-## Scraping the entire page and saving its HTML
+### Scraping the entire page and saving its HTML
 
 The first task we're going to accomplish is to scrape a single page's HTML source code from http://books.toscrape.com and save it.
 
@@ -27,7 +29,7 @@ Compare your html file to this page: http://books.toscrape.com/catalogue/page-1.
 
 Notice that all the relevant data is there: title, price, etc.
 
-## Scraping the entire site using next page logic
+### Scraping the entire site using next page logic
 
 Next, let's scrape all 50 pages on the website and save their source code (note, this will result in 50 files in your tutorial directory):
 
@@ -37,7 +39,7 @@ scrapy crawl nextpagehtmlbooks
 
 This is the basic architecture for scraping an entire site's html, and saving it. Why might this be useful?
 
-## Scraping specific pieces of data from the entire website
+### Scraping specific pieces of data from the entire website
 
 Now that we have a grasp on how to scrape and save the entire source code, let's turn our attention to scraping specific pieces of data.
 
@@ -49,7 +51,7 @@ This will generate a json output file containing all of the titles of the books 
 
 If you're having trouble, the answer can be found in the `answer_pagedatabooks.py` file in the `tutorial/tutorial/spiders` directory.
 
-## Scraping specific pieces of data from the entire website
+### Scraping specific pieces of data from the entire website
 
 Time for the next exercise! At this point, you've seen how to select certain elements to scrape, and you've seen how to scrape multiple pages using the next page logic built into Scrapy.
 
@@ -59,9 +61,9 @@ Create a script that scrapes the titles, prices, and any other data you want off
 
 If you'd like to check your script against mine, open the `nextpagedatabooks.py` file found in `tutorial/tutorial/spiders`.
 
-## Where does BS4 go (optional)
+## selenium
 
-...
+
 
 ## Free Time
 
