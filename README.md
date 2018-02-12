@@ -75,7 +75,13 @@ cd selenium
 
 Then run them using
 
-`python <filename>.py`
+```
+python <filename>.py
+```
+
+`seleniumpagehtmlscrape.py` will scrape and save the html code from http://books.toscrape.com. Notice that when you first run it, it only saves the first two pages. To change the number of pages it scrapes, change line 19 (`while x<=2:`) to be a number between 1 and 50 (the number of pages on the site).
+
+`seleniumpagedatascrape.py` will save the title and price of the books on each page into a json file. Similar to `seleniumpagehtmlscrape.py`, you have to change line 26 (`while x<=2:`) if you want to scrape more than the first two pages of the site. What other pieces of data can you scrape off of the site?
 
 ## Free Time
 

@@ -16,7 +16,7 @@ def form_url(num):
 
 x = 1
 
-while x <= 50: # we know the site has 50 pages
+while x <= 2: # we know the site has 50 pages
     url = form_url(x) # calls the function defined above
     print(url) # just a check to make sure everything is working
     driver.get(url) # opens the url
@@ -31,3 +31,5 @@ while x <= 50: # we know the site has 50 pages
     outfile.write(page)
 
     x += 1 # adds one to our counter
+
+driver.quit()
