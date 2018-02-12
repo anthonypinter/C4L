@@ -39,8 +39,6 @@ while x <= 2: # we know the site has 50 pages
         print price
         prices.append(price)
 
-
-
         out_data = dict([('price', price), ('title', title)])
         print out_data
         data.append(out_data)
